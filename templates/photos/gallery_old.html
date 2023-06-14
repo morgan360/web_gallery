@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <h1>Gallery</h1>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    Gallery
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">All</li>
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-sm-9">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top"
+                             src="https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="{% url 'photos:photo' 1 %}"  class="btn btn-outline-dark btn-sm m-1">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
